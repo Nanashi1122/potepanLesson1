@@ -173,9 +173,10 @@ body{
     position: fixed;
     transition: 0.3s;
     margin: 0;
+    padding: 0;
     padding-top: 40px;
     box-sizing: border-box;
-    width: 100%;
+    width:100%;
     height: 100vh;
     gap: 40px;
     align-items: center;
@@ -186,6 +187,8 @@ body{
     font-family: 'Lato',sans-serif;
     font-size: 16px;
     letter-spacing: 5px;
+    width:100vw;
+    display: block;
   }
   
   .header-nav-2ndline{
@@ -267,6 +270,10 @@ body{
     min-width: 148px;
   }
   
+  .potepan-logo-sp:hover{
+    opacity: initial;
+  }
+  
   .header-hamburger-menu{
     background-color: rgba(0,0,0,.8);
     display: flex;
@@ -283,6 +290,14 @@ body{
   #hamburger:checked ~ .header-hamburger-menu{
     transform: translateX(-100%);
     transition: 0.3s;
+  }
+  
+  .header-nav-text:hover{
+    opacity: initial;
+  }
+  
+  .contact-button:hover{
+    opacity: initial;
   }
   
   main{
