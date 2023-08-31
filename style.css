@@ -11,6 +11,7 @@ body{
   background-color: #fff;
   font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
   -webkit-font-smoothing: antialiased;
+  max-width: 100%;
 }
 
 .first-contents-background{
@@ -34,6 +35,8 @@ body{
   justify-content: space-between;
   padding: 0 36px;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .potepan-logo-pc{
@@ -429,12 +432,29 @@ body{
 }
 
 @media screen and (max-width: 767px){
+  .about-contents{
+    padding: 0 20px;
+  }
+  
   .about-video{
     width: 100%;
   }  
   
   .about-explain{
     width: 100%;
+  }
+
+  .about-content-headline{
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .about-content-headline{
+    font-size: 33px;
+    line-height: 1.4;
+    width: 100%;
+    word-wrap: break-word;
   }
 }
 
